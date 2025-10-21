@@ -12,7 +12,6 @@
     "custom/update",
     "custom/screenrecording-indicator",
     "hyprland/language",
-    "bluetooth",
     "network",
     "pulseaudio",
     "cpu",
@@ -91,9 +90,9 @@
     }
   },
   "bluetooth": {
-    "format": "",
+    "format": "󰂯",
     "format-disabled": "󰂲",
-    "format-connected": "",
+    "format-connected": "󰂱",
     "tooltip-format": "Devices connected: {num_connections}",
     "on-click": "blueberry"
   },
@@ -114,7 +113,7 @@
       "transition-duration": 600,
       "children-class": "tray-group-item"
     },
-    "modules": ["custom/expand-icon", "tray"]
+    "modules": ["custom/expand-icon", "tray", "bluetooth"]
   },
   "custom/expand-icon": {
     "format": " ",

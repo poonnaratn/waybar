@@ -24,10 +24,22 @@
   padding: 0 6px;
   margin: 0 1.5px;
   min-width: 9px;
+  border-bottom: 2px solid transparent;
+  color: inherit;
 }
 
 #workspaces button.empty {
   opacity: 0.5;
+}
+
+#workspaces button.active,
+#workspaces button.focused {
+  border-bottom-color: @foreground;
+}
+
+#workspaces button.active label,
+#workspaces button.focused label {
+  color: inherit;
 }
 
 #cpu,
